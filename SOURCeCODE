@@ -1,0 +1,81 @@
+package edu.bsu.cs121.acfarmer;
+
+import java.util.Scanner;
+/**
+ * creates a twitter hashtag class
+ * @author acfarm33
+ *
+ */
+
+public class TwitterHashtag {
+
+	public static void main(String[] args) {
+		/**
+		 * creates a scanner
+		 * prints out a prompt for the user to input
+		 * creates a string variable and sets it equal to the nextLine method
+		 */
+		
+		Scanner input = new Scanner(System.in);
+		try{
+			System.out.println("Enter number of tweets");
+			int numtweet = input.nextInt();
+			String tweet = "";
+			
+			tweet = input.nextLine();
+			for(int i = 0; i<=numtweet;i++){
+				if(numtweet<=0){
+					System.out.println("The number of unique hash tags is: 0");
+					
+					input.close();
+				}
+				
+				}
+			
+			System.out.println("Enter tweet");
+			
+	/**
+	 * creates an int variable called charCount which is set to 0
+	 * a for loop that loops through the user's input
+	 * an if statement the prints out the number of times the hashtag is used
+	 */
+						int charCount = 0;	
+						
+						tweet = input.nextLine();
+						
+						for(int x = 0; x<tweet.length();x++){
+							if(numtweet>1){
+								tweet = input.nextLine();
+							
+							
+							
+							
+							 
+							if(tweet.charAt(x) == '#'){
+								
+								
+
+								
+							}
+							charCount++;	
+							}
+							charCount++;
+							System.out.println("The number of unique hash tags is: " + charCount  );
+						}
+			
+						
+						
+				
+				
+
+						
+									
+		
+		}catch(Exception e){
+			
+			
+		}finally{
+			input.close();
+		}
+	}
+}
